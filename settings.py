@@ -1,0 +1,44 @@
+from pygame.math import Vector2
+
+SCREEN_HEIGHT = 900
+SCREEN_WIDTH = 1440
+TITLE_SIZE = 64
+
+RADIUS = 12
+
+OVERLAY_PATH = r'graphics/overlay/'
+
+SKILL_OVERLAY_X = 32
+SKILL_OVERLAY_Y = 32
+
+HEALTH_OVERLAY_X = 96
+HEALTH_OVERLAY_Y = 32
+
+HEALTH_BAR_WIDTH = 512
+HEALTH_BAR_HEIGHT = 32
+
+COOLDOWN_OVERLAY_X = 32
+COOLDOWN_OVERLAY_Y = SCREEN_HEIGHT-64
+
+COOLDOWN_BAR_WIDTH = 576
+COOLDOWN_BAR_HEIGHT = 32
+
+BULLET_NUMBER = 30
+BULLET_SPEED = 100
+
+HEALTH_REGEN_AMOUNT = 0.04
+OVERLAY_POSITION = {
+    'skills': (40, SCREEN_HEIGHT - 15),
+}
+
+PLAYER_SKILL_OFFSET = {
+    'laser': Vector2(0, 0)
+}
+
+LAYERS = {
+    'background': 1,
+    'player': 2,
+    'bullet': 3,
+    'skill_selected': 4,
+    'overlay': 5
+}
